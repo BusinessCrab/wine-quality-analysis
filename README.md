@@ -14,16 +14,6 @@ The notebook inspects schema, missing values, exact duplicates, and quality coun
 
 All models use the same reproducible, group-aware train/test split. Exact duplicate rows remain in the data, while identical input rows are assigned to the same partition. Missing feature values are imputed inside pipelines fitted only on training data. The notebook calculates findings at run time and avoids treating predictive importance as causality.
 
-## Repository structure
-
-```text
-wine_quality_prediction.ipynb   # Complete analysis, at the repository root
-data/                           # Downloaded input CSVs (ignored by Git)
-plots/                          # Figures exported when the notebook runs
-requirements.txt                # Runtime Python dependencies
-README.md                       # Setup and analysis guide
-```
-
 ## Data setup
 
 1. Download the primary [Kaggle Red Wine Quality dataset](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009). Extract `winequality-red.csv` into `data/`.
