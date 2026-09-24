@@ -38,7 +38,3 @@ python -m notebook wine_quality_prediction.ipynb
 ```
 
 Select the environment's Python kernel in Jupyter and choose **Run All**. Start Jupyter from the repository root because paths resolve from the current working directory. Each run saves labeled PNG figures to `plots/`. The notebook's source contains no fabricated outputs or fixed dataset metrics. The supplied figures were generated from the Kaggle red-wine CSV; adding white wine and rerunning replaces them with combined-data figures.
-
-## Interpretation
-
-Quality scores are ordered but imbalanced, so read macro-F1 and individual confusion-matrix rows alongside overall accuracy. Permutation importance is computed on the held-out set for each quality class; it can vary for rare classes or correlated features. These measurements describe predictive associations in the supplied data.
